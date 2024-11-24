@@ -8,7 +8,9 @@ export const JoinUs = () => {
                 <div className='max-w-[828px] w-full mx-auto flex flex-col items-center gap-4 '>
 
                 <h1 className=' text-center  text-[30px] font-semibold'>
-                Empowering Financial Futures for Justice-Impacted Individuals: Take the First Step Towards Rebuilding Credit and Restoring Dignity
+                Communities with Credit Parish 
+General 
+
                 </h1>
                 <button className='bg-[#033f91] text-[#ffff] text-[18px] rounded-[36px] px-[50px] py-[20px] font-semibold  flex gap-2 justify-center '>
                 Join The Waitlist

@@ -25,7 +25,7 @@ export const Header = () => {
           </ul>
         </div>
         <button className='bg-white text-[16px] font-semibold text-[#2d2d2d] py-[10px] px-[40px] border border-[#0451b0] rounded-[30px] transition-all hover:bg-[#033f91] hover:text-white '>
-        Request Demo
+       Join Waitlist
         </button>
       </div>
     </div>

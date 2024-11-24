@@ -16,23 +16,23 @@ export const Faq = () => {
       faqItems: [
         {
           id: 1,
-          title: 'What is Parish Tec?',
-          content: 'Parish Tec is an upcoming financial technology startup platform focused on empowering justice-impacted individuals and their families by offering credit-building tools and financial support. Our goal is to help people rebuild credit and achieve financial independence.'
+          title: 'What is Parish?',
+          content: 'Parish is an upcoming financial technology startup platform focused on empowering justice-impacted individuals and their families by offering credit-building tools and financial support. Our goal is to help people rebuild credit and achieve financial independence.'
         },
         {
           id: 2,
-          title: 'How can I get early access to Parish Tec?',
-          content: `Simply sign up on our landing page! By joining our early access list, you'll be among the first to try Parish Tec when we launch and receive exclusive updates about our progress.`
+          title: 'How can I get early access to Parish?',
+          content: `Simply sign up on our landing page! By joining our early access list, you'll be among the first to try Parish when we launch and receive exclusive updates about our progress.`
         },
         {
           id: 3,
-          title: 'Who is Parish Tec designed for?',
-          content: 'Parish Tec is designed to support justice-impacted individuals, their families, and reentry housing providers. Our mission is to provide accessible financial tools and resources tailored to those who face unique financial challenges.'
+          title: 'Who is Parish designed for?',
+          content: 'Parish is designed to support justice-impacted individuals, their families, and reentry housing providers. Our mission is to provide accessible financial tools and resources tailored to those who face unique financial challenges.'
         },
         {
           id: 4,
-          title: 'When will Parish Tec be available?',
-          content: `We’re working hard to bring Parish Tec to life! While we don't have an exact launch date yet, signing up for early access ensures you're the first to know about our progress and release updates.`
+          title: 'When will Parish be available?',
+          content: `We’re working hard to bring Parish to life! While we don't have an exact launch date yet, signing up for early access ensures you're the first to know about our progress and release updates.`
         },
 
       ]
