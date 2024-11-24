@@ -23,7 +23,7 @@ const data = [
 export const CommunityCard = () => {
     return (
         <div className='max-w-[1280px] bg-white mx-auto w-full'>
-            <div className='bg-[#033F91] w-full rounded-[24px] px-[30px] pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2 '>
+            <div className='bg-[#033F91] w-full rounded-[24px] px-[30px] pb-[30px] lg:pb-0 pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2 '>
                
 
                 <div className="">

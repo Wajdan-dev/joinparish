@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <div className='px-[15px] lg:px-0 max-w-[1280px] mx-auto w-full pt-4 pb-[50px]'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center">
-                <div className="flex flex-col gap-[20px]">
+                <div className="flex flex-col gap-[20px] text-center lg:text-start ">
                     <h1 className='font-bold  text-black text-[40px]'>
                         Parish
                     </h1>
@@ -13,7 +13,7 @@ export const Footer = () => {
                         © Parish Reentry Technologies, Inc. All Rights Reserved. 2024
                     </p>
                 </div>
-                <div className="flex flex-col items-end gap-[40px]">
+                <div className="flex flex-col justify-center items-center lg:items-end gap-[40px]">
                    <div className="flex gap-[30px]">
                     <Image src='/images/facebook.svg' width={20} height={20} alt='fb' />
                     <Image src='/images/twitter.svg' width={20} height={20} alt='fb' />

@@ -9,8 +9,8 @@
 
 /* styles/globals.css */
 @font-face {
-  font-family: 'Outfit';
-  src: url('./fonts/static/Outfit-light.ttf') format('truetype');
+  font-family: "Outfit";
+  src: url("/static/Outfit-light.ttf") format("truetype");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +29,7 @@ body {
 body {
   color: #2d2d2d;
   background: white;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
