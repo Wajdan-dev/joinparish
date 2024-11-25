@@ -26,7 +26,7 @@ export const JoinUs = () => {
           <p className='text-center'>
             Join the Parish tec family and be the first to know when we launch!
           </p>
-          <div className="p-[30px]">
+          <div className="lg:p-[30px]">
             <div className="flex flex-col mb-[14px]">
               <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
 

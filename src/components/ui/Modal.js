@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       {/* Modal Content with Flip Animation */}
       <div
-        className="modal-content bg-white w-full max-w-[800px] rounded-[20px] px-[144px] pt-[48px] pb-[24px] relative h-[600.208px] overflow-y-scroll"
+        className="modal-content bg-white w-full max-w-[800px] rounded-[20px] lg:px-[144px] lg:pt-[48px] lg:pb-[24px] p-4 relative h-[600.208px] overflow-y-scroll"
         style={{ boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.15)" }}
       >
         <Image
