@@ -1,5 +1,6 @@
 'use client'
-import React, { useState, useRef } from 'react';
+import Aos from 'aos';
+import React, { useState, useRef, useEffect } from 'react';
 
 export const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -60,12 +61,14 @@ export const Faq = () => {
   };
 
   const activeFaqItems = faqData.find(item => item.category === activeFilter)?.faqItems || [];
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className=" ">
 
       <div className=" ">
-        <div className="md:pl-3 flex flex-col gap-3">
+        <div className="md:pl-3 flex flex-col gap-3" data-aos-duration="1500" data-aos="fade-up">
           {activeFaqItems.length > 0 ? (
             activeFaqItems.map((item, index) => (
               <div key={item.id}>

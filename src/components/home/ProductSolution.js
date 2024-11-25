@@ -1,15 +1,21 @@
+'use client'
+import Aos from 'aos';
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import 'aos/dist/aos.css';
 
 export const ProductSolution = () => {
+    useEffect(() => {
+        Aos.init();
+      }, []);
     return (
         <div className='bg-white py-[40px] px-[15px] lg:px-0'>
             <div className="max-w-[1280px] mx-auto w-full text-center">
-                <h1 className='text-[#2d2d2d] text-[30px] lg:text-[64px] font-semibold '>
+                <h1 className='text-[#2d2d2d] text-[30px] lg:text-[64px] font-semibold ' data-aos-duration="1000" data-aos="fade-up">
                     Product Features
                 </h1>
-                <p className='text-[#2d2d2d] lg:text-[20px]'>Credit-building financial technology that leverages recurring charges for &nbsp;justice-impacted communities&nbsp;</p>
-                <div className="flex justify-center pt-3">
+                <p className='text-[#2d2d2d] lg:text-[20px]'  >Credit-building financial technology that leverages recurring charges for &nbsp;justice-impacted communities&nbsp;</p>
+                <div className="flex justify-center pt-3" data-aos-duration="1500" data-aos="fade-up">
 
                     <ul>
                         <li className='flex gap-3 text-start items-center'>
