@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 export const ProductSolution = () => {
     useEffect(() => {
         Aos.init();
-      }, []);
+    }, []);
     return (
         <div className='bg-white py-[40px] px-[15px] lg:px-0'>
             <div className="max-w-[1280px] mx-auto w-full text-center">
@@ -18,47 +18,64 @@ export const ProductSolution = () => {
                 <div className="flex justify-center pt-3" data-aos-duration="1500" data-aos="fade-up">
 
                     <ul>
-                        <li className='flex gap-3 text-start items-center'>
-                            <span>
-                                <Image src='/images/svgexport-1.svg' width={15} height={15} alt='' />
+                        <li className='flex gap-3 text-start lg:items-center'>
+                            <span className="flex-shrink-0">
+                                <Image
+                                    src='/images/svgexport-1.svg'
+                                    width={15}
+                                    height={15}
+                                    alt=''
+                                    className="object-contain mt-2"  // Ensures the image fits within the container
+                                />
                             </span>
-                            <span className='text-[#2d2d2d] text-[18px]'>
+                            <span className='text-[#2d2d2d] text-[16px] lg:text-[18px]'>
                                 Reloadable secured credit card for recurring criminal legal system related payments
-
                             </span>
-
                         </li>
-                        <li className='flex gap-3 text-start items-center'>
-                            <span>
-                                <Image src='/images/svgexport-1.svg' width={15} height={15} alt='' />
+                        <li className='flex gap-3 text-start lg:items-center'>
+                            <span className="flex-shrink-0">
+                                <Image
+                                    src='/images/svgexport-1.svg'
+                                    width={15}
+                                    height={15}
+                                    alt=''
+                                    className="object-contain mt-2"  // Ensures the image fits within the container
+                                />
                             </span>
-                            <span className='text-[#2d2d2d] text-[18px]'>
+                            <span className='text-[#2d2d2d] text-[16px] lg:text-[18px]'>
                                 Digital convenience and security with custom electronic wallets
-
                             </span>
-
                         </li>
-                        <li className='flex gap-3 text-start items-center'>
-                            <span>
-                                <Image src='/images/svgexport-1.svg' width={15} height={15} alt='' />
+                        <li className='flex gap-3 text-start lg:items-center'>
+                            <span className="flex-shrink-0">
+                                <Image
+                                    src='/images/svgexport-1.svg'
+                                    width={15}
+                                    height={15}
+                                    alt=''
+                                    className="object-contain mt-2"  // Ensures the image fits within the container
+                                />
                             </span>
-                            <span className='text-[#2d2d2d] text-[18px]'>
+                            <span className='text-[#2d2d2d] text-[16px] lg:text-[18px]'>
                                 Comprehensive credit reporting and spending insights
-                               
-
                             </span>
-
                         </li>
-                        <li className='flex gap-3 text-start items-center'>
-                            <span>
-                                <Image src='/images/svgexport-1.svg' width={15} height={15} alt='' />
+                        <li className='flex gap-3 text-start lg:items-center'>
+                            <span className="flex-shrink-0">
+                                <Image
+                                    src='/images/svgexport-1.svg'
+                                    width={15}
+                                    height={15}
+                                    alt=''
+                                    className="object-contain mt-2"  // Ensures the image fits within the container
+                                />
                             </span>
-                            <span className='text-[#2d2d2d] text-[18px]'>
-                            Positive only payment reporting to all major credit bureaus
+                            <span className='text-[#2d2d2d] text-[16px] lg:text-[18px]'>
+                                Positive only payment reporting to all major credit bureaus
                             </span>
-
                         </li>
                     </ul>
+
                 </div>
             </div>
         </div>

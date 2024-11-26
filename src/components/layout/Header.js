@@ -24,11 +24,11 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className="bg-white h-[80px] flex items-center relative">
+    <div className="bg-white lg:h-[80px] flex items-center relative">
       {/* Header */}
       <div className="max-w-[1280px] mx-auto w-full px-[15px] lg:px-0 flex justify-between items-center">
         <div className="logo" data-aos-duration="1000" data-aos="fade-down">
-          <h1 className="font-bold text-black text-[40px]">Parish</h1>
+          <h1 className="font-bold text-black text-[35px] lg:text-[40px]">Parish</h1>
         </div>
         <div className="menu-items hidden lg:block" data-aos-duration="1000" data-aos="fade-down">
           <ul className="flex gap-[30px] items-center">
