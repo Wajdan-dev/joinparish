@@ -69,21 +69,22 @@ export const JoinUs = () => {
         </div>
 
       </Modal>
-      <div className='bg-[#F1F3F8] w-full rounded-[24px] px-[30px] p-[30px]  '>
-        <div className='max-w-[828px] w-full mx-auto flex flex-col items-center gap-4 '>
+      <div className='bg-[#F1F3F8] w-full rounded-[24px] px-[30px] p-[30px]  ' >
+        <div className='max-w-[828px] w-full mx-auto flex flex-col items-center gap-4 ' data-aos-duration="1000" data-aos="fade-up">
 
-          <h1 className=' text-center  text-[30px] font-semibold' data-aos-duration="1000" data-aos="fade-up">
+          <h1 className=' text-center  text-[30px] font-semibold'  >
             Communities with Credit Parish
             General
 
           </h1>
           <button
+          
             className="bg-[#033f91] text-[#ffff] text-[18px] rounded-[36px] px-[50px] py-[20px] font-semibold flex gap-2 justify-center"
             onClick={toggleModal}
           >
             Join The Waitlist
           </button>
-          <div data-aos-duration="1000" data-aos="fade-up">
+          <div  >
 
             <Image src='/images/play-buttons-1536x368.png' className='max-w-[473px] mx-auto w-full h-auto' width={1000} height={1000} alt='' />
           </div>

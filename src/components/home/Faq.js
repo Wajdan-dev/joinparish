@@ -73,11 +73,11 @@ export const Faq = () => {
             activeFaqItems.map((item, index) => (
               <div key={item.id}>
                 <div
-                  className="md:p-[20px] text-white p-[10px]   cursor-pointer border-b border-[#ffff]  "
+                  className={` text-white    cursor-pointer ${activeIndex === index ? '' : 'border-b border-[#FFFFFF3B] '}  `}
 
                   onClick={() => toggleAccordion(index)}
                 >
-                  <div className="flex items-center  justify-between">
+                  <div className={`flex items-center md:p-[20px] p-[10px] ${activeIndex === index ? 'rounded-[25px]  bg-[#0451b0]': ''}  justify-between`}>
 
 
                     <h3 className="font-semibold text-[18px] leading-[28px]" style={{ letterSpacing: '0.15px' }}>{item.title}</h3>

@@ -2,13 +2,17 @@ import Image from "next/image";
 import React from "react";
 
 const Modal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
-
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      {/* Modal Content with Flip Animation */}
+    <div
+      className={`fixed inset-0 z-50 flex items-center justify-center   transition-all duration-500 ${
+        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      {/* Modal Content with Zoom Animation */}
       <div
-        className="modal-content bg-white w-full max-w-[800px] rounded-[20px] lg:px-[144px] lg:pt-[48px] lg:pb-[24px] p-4 relative h-[600.208px] overflow-y-scroll"
+        className={`modal-content bg-white w-full max-w-[800px] rounded-[20px] lg:px-[144px] lg:pt-[48px] lg:pb-[24px] p-4 relative h-[600.208px] overflow-y-scroll transform transition-transform duration-500 ${
+          isOpen ? "scale-100" : "scale-90"
+        }`}
         style={{ boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.15)" }}
       >
         <Image
@@ -22,23 +26,23 @@ const Modal = ({ isOpen, onClose, children }) => {
         {children}
       </div>
 
-      {/* Styles for Flip Animation */}
+      {/* Styles for Zoom Animation */}
       <style jsx>{`
         .modal-content {
-          animation: flip-in 0.6s ease-in-out;
+          animation: zoom-in 0.6s ease-in-out;
         }
 
-        @keyframes flip-in {
+        @keyframes zoom-in {
           0% {
-            transform: rotateY(-90deg);
+            transform: scale(0.8);
             opacity: 0;
           }
           50% {
-            transform: rotateY(-45deg);
-            opacity: 0.5;
+            transform: scale(1.05);
+            opacity: 0.7;
           }
           100% {
-            transform: rotateY(0deg);
+            transform: scale(1);
             opacity: 1;
           }
         }

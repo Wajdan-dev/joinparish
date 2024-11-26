@@ -14,7 +14,7 @@ export const ProductSolution = () => {
                 <h1 className='text-[#2d2d2d] text-[30px] lg:text-[64px] font-semibold ' data-aos-duration="1000" data-aos="fade-up">
                     Product Features
                 </h1>
-                <p className='text-[#2d2d2d] lg:text-[20px]'  >Credit-building financial technology that leverages recurring charges for &nbsp;justice-impacted communities&nbsp;</p>
+                <p className='text-[#2d2d2d] lg:text-[20px]' data-aos-duration="1000" data-aos="fade-up"  >Credit-building financial technology that leverages recurring charges for &nbsp;justice-impacted communities&nbsp;</p>
                 <div className="flex justify-center pt-3" data-aos-duration="1500" data-aos="fade-up">
 
                     <ul>
