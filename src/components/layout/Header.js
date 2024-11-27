@@ -28,6 +28,10 @@ export const Header = () => {
   const handleNext = () => {
     setStep((prevStep) => (prevStep === 1 ? 2 : 1));
   };
+  const handleBack = () => {
+    setStep((prevStep) => (prevStep === 1 ? 2 : 1));
+  };
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -115,24 +119,56 @@ export const Header = () => {
               <>
                 <div className="flex flex-col mb-[14px]">
                   <label htmlFor="lastName" className="pb-[7px] text-[#2d2d2d] text-[16px] font-semibold">
-                    Last Name
+                    Job Title
                   </label>
                   <input
                     type="text"
-                    placeholder="Last Name*"
+                    placeholder="Job Title*"
+                    className="w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none"
+                    id="lastName"
+                  />
+                </div>
+                <div className="flex flex-col mb-[14px]">
+                  <label htmlFor="lastName" className="pb-[7px] text-[#2d2d2d] text-[16px] font-semibold">
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Email*"
+                    className="w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none"
+                    id="lastName"
+                  />
+                </div>
+                <div className="flex flex-col mb-[14px]">
+                  <label htmlFor="lastName" className="pb-[7px] text-[#2d2d2d] text-[16px] font-semibold">
+                    Phone
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Phone*"
                     className="w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none"
                     id="lastName"
                   />
                 </div>
               </>
             )}
+            <div className="flex items-center gap-3">
+              {step === 2 &&
+                <button
+                  className="rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white text-[18px] font-semibold"
+onClick={handleBack}
+                >
+                  Back
+                </button>
+              }
+              <button
+                className="rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white text-[18px] font-semibold"
+                onClick={handleNext}
+              >
+                {step === 1 ? "Next" : "Submit"}
+              </button>
+            </div>
 
-            <button
-              className="rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white text-[18px] font-semibold"
-              onClick={handleNext}
-            >
-              {step === 1 ? "Next" : "Submit"}
-            </button>
           </div>
           <p className="text-center text-[12px] max-w-[398px] mx-auto">
             You can unsubscribe at any time by clicking the link in the footer of our emails. To read our Privacy Policy, please visit:
