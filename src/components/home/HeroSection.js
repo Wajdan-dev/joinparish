@@ -101,7 +101,7 @@ export const HeroSection = () => {
           </div>
 
           <div>
-            <Image src='/images/card.png' width={1000} height={1000} className='w-full h-auto max-w-[520px] object-contain lg:ml-auto' alt='' />
+            <Image src='/images/parish-banner.png' width={1000} height={1000} className='w-full h-auto max-w-[520px] object-contain lg:ml-auto' alt='' />
             <div className="px-[16px] mb-7 mx-auto lg:hidden block border text-white border-white rounded-[24px] w-[99px] text-center">
               <h6 className='font-semibold uppercase'>
                 Mission

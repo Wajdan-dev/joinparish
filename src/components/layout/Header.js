@@ -39,7 +39,7 @@ export const Header = () => {
 
   return (
     <div className="bg-white lg:h-[80px] flex items-center relative">
-      <Modal isOpen={isModalOpen} onClose={toggleModal}>
+      {/* <Modal isOpen={isModalOpen} onClose={toggleModal}>
         <div className="flex flex-col">
           <h1 className='font-semibold text-[20px] text-center'>
             Parish
@@ -56,7 +56,7 @@ export const Header = () => {
             className="bg-[#f9f9f9] max-w-[398px] mx-auto w-full p-[30px] rounded-[15px] my-4"
             style={{ boxShadow: "0 0 15px rgba(0, 0, 0, 0.1)" }}
           >
-            {/* Steps */}
+ 
             <div className="flex justify-between items-center">
               <div className={`pr-[33px] flex items-center flex-col justify-center`}>
                 <div
@@ -79,7 +79,7 @@ export const Header = () => {
               </div>
             </div>
 
-            {/* Form Fields */}
+            
             {step === 1 ? (
               <>
                 <div className="flex flex-col mb-[14px]">
@@ -180,6 +180,60 @@ export const Header = () => {
           </p>
         </div>
 
+      </Modal> */}
+       <Modal isOpen={isModalOpen} onClose={toggleModal}>
+        <div className="flex flex-col">
+          <h1 className='font-semibold text-[20px] text-center'>
+            Parish
+          </h1>
+          <h2 className='text-[35px] font-semibold text-center'>
+            Get Exclusive Early Access
+          </h2>
+          <p className='text-center'>
+            Join the Parish  family and be the first to know when we launch!
+          </p>
+          <div className="lg:p-[30px]">
+            <div className="flex flex-col mb-[14px]">
+              <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
+
+                Please select the option that best describes your role or relationship to the justice-impacted community:
+              </label>
+              <select id="countries" className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none">
+
+                <option value="Financial Supporter – I send money for someone in prison.">Financial Supporter – I send money for someone in prison.</option>
+                <option value="Returning Citizen – I am a returning citizen who is mandated to pay restitution, electronic monitoring and/or community supervision fees.">Returning Citizen – I am a returning citizen who is mandated to pay restitution, electronic monitoring and/or community supervision fees.</option>
+                <option value="Residential Representative – I represent or am involved with housing facilities or services that may assist justice-impacted individuals.">Residential Representative – I represent or am involved with housing facilities or services that may assist justice-impacted individuals.</option>
+                <option value="Select One*">Select One*</option>
+
+              </select>
+            </div>
+            <div className="flex flex-col mb-[14px]">
+              <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
+              First Name
+              </label>
+              <input type="text" placeholder='First Name*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
+              
+            </div>
+            <div className="flex flex-col mb-[14px]">
+              <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
+              Last Name
+              </label>
+              <input type="text" placeholder='Last Name*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
+              
+            </div>
+            <div className="flex flex-col mb-[14px]">
+              <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
+             Email
+              </label>
+              <input type="email" placeholder='Email*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
+              
+            </div>
+            <button className='rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white  text-[18px] font-semibold '>
+            Submit 
+            </button>
+          </div>
+        </div>
+
       </Modal>
       {/* Header */}
       <div className="max-w-[1280px] mx-auto w-full px-[15px] lg:px-0 flex justify-between items-center">
@@ -210,7 +264,7 @@ export const Header = () => {
               className="text-[#2d2d2d] text-[16px] transition-all hover:text-[#0451b0] font-semibold cursor-pointer"
               onClick={() => scrollToSection('faq')}
             >
-              Faq
+              FAQ
             </li>
           </ul>
         </div>
@@ -264,7 +318,7 @@ export const Header = () => {
             className="cursor-pointer hover:text-gray-400"
             onClick={() => scrollToSection('faq')}
           >
-            Faq
+            FAQ
           </li>
           <li>
           <button

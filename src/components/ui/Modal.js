@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     >
       {/* Modal Content with Zoom Animation */}
       <div
-        className={`modal-content bg-white w-full max-w-[800px] rounded-[20px] lg:px-[144px] lg:pt-[48px] lg:pb-[24px] p-4 relative h-[600.208px] overflow-y-scroll transform transition-transform duration-500 ${
+        className={`modal-content bg-white w-full max-w-[800px] rounded-[20px] lg:px-[144px] lg:pt-[48px] lg:pb-[24px] p-4 relative   transform transition-transform duration-500 ${
           isOpen ? "scale-100" : "scale-90"
         }`}
         style={{ boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.15)" }}
