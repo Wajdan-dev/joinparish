@@ -11,6 +11,7 @@ export const Header = () => {
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+    setIsDrawerOpen(false)
   };
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -156,7 +157,7 @@ export const Header = () => {
               {step === 2 &&
                 <button
                   className="rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white text-[18px] font-semibold"
-onClick={handleBack}
+                  onClick={handleBack}
                 >
                   Back
                 </button>
@@ -204,6 +205,12 @@ onClick={handleBack}
               onClick={() => scrollToSection('justice-section')}
             >
               Parish Cards
+            </li>
+            <li
+              className="text-[#2d2d2d] text-[16px] transition-all hover:text-[#0451b0] font-semibold cursor-pointer"
+              onClick={() => scrollToSection('faq')}
+            >
+              Faq
             </li>
           </ul>
         </div>
@@ -253,7 +260,25 @@ onClick={handleBack}
           >
             Parish Cards
           </li>
+          <li
+            className="cursor-pointer hover:text-gray-400"
+            onClick={() => scrollToSection('faq')}
+          >
+            Faq
+          </li>
+          <li>
+          <button
+          onClick={toggleModal}
+
+          data-aos-duration="1200"
+          data-aos="fade-down"
+          className="bg-white  text-[16px] font-semibold text-[#2d2d2d] py-[10px] px-[40px] border border-[#0451b0] rounded-[30px] transition-all hover:bg-[#033f91] hover:text-white"
+        >
+          Join Waitlist
+        </button>
+          </li>
         </ul>
+       
       </div>
 
       {/* Overlay */}

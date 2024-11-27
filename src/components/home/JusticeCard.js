@@ -91,7 +91,7 @@ export const JusticeCard = () => {
             data-aos-duration="1000"
             data-aos="fade-up"
         >
-            <div className="bg-[#F1F3F8] w-full rounded-[24px] px-[30px] pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div className="bg-[#F1F3F8] w-full rounded-[24px] px-[30px] pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2  ">
                 <div className="flex flex-col gap-[20px]">
                     <h3 className="text-[#2d2d2d] text-[30px] font-semibold lg:text-[48px] ">
                         Parish Justice Card

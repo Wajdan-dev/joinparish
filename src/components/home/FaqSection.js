@@ -9,7 +9,7 @@ export const FaqSection = () => {
     Aos.init();
   }, []);
   return (
-    <div className="max-w-[1280px] py-[30px] bg-white mx-auto w-full" data-aos-duration="1000" data-aos="fade-up">
+    <div className="max-w-[1280px] py-[30px] bg-white mx-auto w-full" data-aos-duration="1000" data-aos="fade-up" id='faq'>
 
     <div className="  p-[30px] bg-[#033F91] rounded-[24px]   mx-auto  ">
       <div className="text-center">
