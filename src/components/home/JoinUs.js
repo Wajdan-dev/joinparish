@@ -24,7 +24,7 @@ export const JoinUs = () => {
             Get Exclusive Early Access
           </h2>
           <p className='text-center'>
-            Join the Parish tec family and be the first to know when we launch!
+            Join the Parish  family and be the first to know when we launch!
           </p>
           <div className="lg:p-[30px]">
             <div className="flex flex-col mb-[14px]">
@@ -63,7 +63,7 @@ export const JoinUs = () => {
               
             </div>
             <button className='rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white  text-[18px] font-semibold '>
-            submit 
+            Submit 
             </button>
           </div>
         </div>

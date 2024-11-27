@@ -4,7 +4,7 @@ import React from "react";
 const Modal = ({ isOpen, onClose, children }) => {
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center   transition-all duration-500 ${
+      className={`fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-70  transition-all duration-500 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
