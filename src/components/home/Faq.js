@@ -28,7 +28,7 @@ export const Faq = () => {
         {
           id: 3,
           title: 'Who is Parish designed for?',
-          content: 'Parish is designed to support justice-impacted individuals, their families, and reentry housing providers. Our mission is to provide accessible financial tools and resources tailored to those who face unique financial challenges.'
+          content: 'Parish is designed to support justice-impacted individuals, their families. Our mission is to provide accessible financial tools and resources tailored to those who face unique financial challenges.'
         },
         {
           id: 4,

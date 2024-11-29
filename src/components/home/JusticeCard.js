@@ -21,7 +21,8 @@ const data = [
         heading: 1_200_000_000, // 1.2B
         subHeading: "SPENT",
         description: "On electronic monitoring in 2023 alone.",
-        suffix: "B"
+        suffix: "B",
+        prefix: "$" // Add a prefix for currency
     }
 ];
 
@@ -69,19 +70,24 @@ export const JusticeCard = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const formatNumber = (value, suffix) => {
+    const formatNumber = (value, suffix, prefix = "") => {
+        let formattedValue;
+
         if (suffix === "M") {
             const millionValue = value / 1_000_000;
-            return Number.isInteger(millionValue)
+            formattedValue = Number.isInteger(millionValue)
                 ? `${millionValue}M`
                 : `${millionValue.toFixed(1)}M`;
         } else if (suffix === "B") {
             const billionValue = value / 1_000_000_000;
-            return Number.isInteger(billionValue)
+            formattedValue = Number.isInteger(billionValue)
                 ? `${billionValue}B`
                 : `${billionValue.toFixed(1)}B`;
+        } else {
+            formattedValue = Math.round(value); // For values without suffix
         }
-        return Math.round(value); // For values without suffix
+
+        return `${prefix}${formattedValue}`; // Add the prefix if it exists
     };
 
     return (
@@ -91,21 +97,19 @@ export const JusticeCard = () => {
             data-aos-duration="1000"
             data-aos="fade-up"
         >
-            <div className="bg-[#F1F3F8] w-full rounded-[24px] px-[30px] pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2  ">
+            <div className="bg-[#F1F3F8] w-full rounded-[24px] px-[30px] pt-[30px] gap-[30px] grid grid-cols-1 lg:grid-cols-2">
                 <div className="flex flex-col gap-[20px]">
-                    <h3 className="text-[#2d2d2d] text-[30px] font-semibold lg:text-[48px] ">
+                    <h3 className="text-[#2d2d2d] text-[30px] font-semibold lg:text-[48px]">
                         Parish Justice Card
                     </h3>
                     <p className="lg:text-[18px]">
-                        A secured credit card that helps justice-impacted individuals build
-                        credit by leveraging recurring payments for community supervision,
-                        electronic monitoring, and restitution fees.
+                        A secured credit card that helps justice-impacted individuals build credit by leveraging recurring payments for community supervision, electronic monitoring, and restitution fees.
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
                         {data.map((item, index) => (
                             <div className="text-center" key={index}>
                                 <h1 className="lg:text-[43px] text-[30px] font-bold">
-                                    {formatNumber(counters[index], item.suffix)}
+                                    {formatNumber(counters[index], item.suffix, item.prefix)}
                                 </h1>
                                 <p className="text-[19px] mb-2 font-normal">{item.subHeading}</p>
                                 <p data-aos-duration="1500" data-aos="fade-up">

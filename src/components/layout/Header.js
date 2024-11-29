@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Modal from '../ui/Modal';
+import Link from 'next/link';
 
 export const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -238,7 +239,15 @@ export const Header = () => {
       {/* Header */}
       <div className="max-w-[1280px] mx-auto w-full px-[15px] lg:px-0 flex justify-between items-center">
         <div className="logo" data-aos-duration="1000" data-aos="fade-down">
-          <h1 className="font-bold text-black text-[35px] lg:text-[40px]">Parish</h1>
+           
+        <h1 
+  className="font-bold text-black text-[35px] cur# lg:text-[40px]" 
+  onClick={() => window.location.reload()}
+>
+  Parish
+</h1>
+
+           
         </div>
         <div className="menu-items hidden lg:block" data-aos-duration="1000" data-aos="fade-down">
           <ul className="flex gap-[30px] items-center">

@@ -19,7 +19,7 @@ const data = [
     {
         heading: 3_000_000_000, // $3B
         subHeading: "SPENT",
-        description: "Annually Families spend $3 billion on commissary accounts and phone calls.",
+        description: "Annually families spend $3 billion on commissary accounts and phone calls.",
         suffix: "B" // Billion suffix
     }
 ];
