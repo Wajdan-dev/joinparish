@@ -112,7 +112,7 @@ export const JusticeCard = () => {
                                     {formatNumber(counters[index], item.suffix, item.prefix)}
                                 </h1>
                                 <p className="text-[19px] mb-2 font-normal">{item.subHeading}</p>
-                                <p data-aos-duration="1500" data-aos="fade-up">
+                                <p  >
                                     {item.description}
                                 </p>
                             </div>

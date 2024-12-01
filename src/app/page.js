@@ -16,9 +16,15 @@ export default function Home() {
       <Header />
       <HeroSection />
       <ProductSolution />
+      <div id="justice-sections">
+
       <JusticeCard />
+      </div>
       <CommunityCard />
+      <div id="faqs">
+
       <FaqSection />
+      </div>
       <JoinUs />
       <Footer />
      </div>

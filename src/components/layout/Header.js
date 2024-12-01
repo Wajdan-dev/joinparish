@@ -182,7 +182,7 @@ export const Header = () => {
         </div>
 
       </Modal> */}
-       <Modal isOpen={isModalOpen} onClose={toggleModal}>
+      <Modal isOpen={isModalOpen} onClose={toggleModal}>
         <div className="flex flex-col">
           <h1 className='font-semibold text-[20px] text-center'>
             Parish
@@ -210,27 +210,27 @@ export const Header = () => {
             </div>
             <div className="flex flex-col mb-[14px]">
               <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
-              First Name
+                First Name
               </label>
               <input type="text" placeholder='First Name*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
-              
+
             </div>
             <div className="flex flex-col mb-[14px]">
               <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
-              Last Name
+                Last Name
               </label>
               <input type="text" placeholder='Last Name*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
-              
+
             </div>
             <div className="flex flex-col mb-[14px]">
               <label htmlFor="" className='pb-[7px] text-[#2d2d2d] text-[16px] font-semibold '>
-             Email
+                Email
               </label>
               <input type="email" placeholder='Email*' className=" w-full border border-[#22283133] bg-white rounded-[59px] py-2 px-3 outline-none" name="" id="" />
-              
+
             </div>
             <button className='rounded-[36px] w-[155px] h-[58px] flex justify-center items-center bg-[#0451b0] text-white  text-[18px] font-semibold '>
-            Submit 
+              Submit
             </button>
           </div>
         </div>
@@ -239,15 +239,17 @@ export const Header = () => {
       {/* Header */}
       <div className="max-w-[1280px] mx-auto w-full px-[15px] lg:px-0 flex justify-between items-center">
         <div className="logo" data-aos-duration="1000" data-aos="fade-down">
-           
-        <h1 
-  className="font-bold text-black text-[35px] cur# lg:text-[40px]" 
+
+        <h1
+  className="font-bold text-black text-[35px] lg:text-[40px] cursor-pointer inline-block select-none"
   onClick={() => window.location.reload()}
 >
   Parish
 </h1>
 
-           
+          
+
+
         </div>
         <div className="menu-items hidden lg:block" data-aos-duration="1000" data-aos="fade-down">
           <ul className="flex gap-[30px] items-center">
@@ -265,13 +267,13 @@ export const Header = () => {
             </li>
             <li
               className="text-[#2d2d2d] text-[16px] transition-all hover:text-[#0451b0] font-semibold cursor-pointer"
-              onClick={() => scrollToSection('justice-section')}
+              onClick={() => scrollToSection('justice-sections')}
             >
               Parish Cards
             </li>
             <li
               className="text-[#2d2d2d] text-[16px] transition-all hover:text-[#0451b0] font-semibold cursor-pointer"
-              onClick={() => scrollToSection('faq')}
+              onClick={() => scrollToSection('faqs')}
             >
               FAQ
             </li>
@@ -319,29 +321,29 @@ export const Header = () => {
           </li>
           <li
             className="cursor-pointer hover:text-gray-400"
-            onClick={() => scrollToSection('justice-section')}
+            onClick={() => scrollToSection('justice-sections')}
           >
             Parish Cards
           </li>
           <li
             className="cursor-pointer hover:text-gray-400"
-            onClick={() => scrollToSection('faq')}
+            onClick={() => scrollToSection('faqs')}
           >
             FAQ
           </li>
           <li>
-          <button
-          onClick={toggleModal}
+            <button
+              onClick={toggleModal}
 
-          data-aos-duration="1200"
-          data-aos="fade-down"
-          className="bg-white  text-[16px] font-semibold text-[#2d2d2d] py-[10px] px-[40px] border border-[#0451b0] rounded-[30px] transition-all hover:bg-[#033f91] hover:text-white"
-        >
-          Join Waitlist
-        </button>
+              data-aos-duration="1200"
+              data-aos="fade-down"
+              className="bg-white  text-[16px] font-semibold text-[#2d2d2d] py-[10px] px-[40px] border border-[#0451b0] rounded-[30px] transition-all hover:bg-[#033f91] hover:text-white"
+            >
+              Join Waitlist
+            </button>
           </li>
         </ul>
-       
+
       </div>
 
       {/* Overlay */}

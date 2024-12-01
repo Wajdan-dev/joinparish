@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className='px-[15px] lg:px-0 max-w-[1280px] mx-auto w-full pt-4 pb-[50px]'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center">
                 <div className="flex flex-col gap-[20px] text-center lg:text-start ">
-                    <h1 className='font-bold  text-black text-[40px] cursor-pointer' onClick={() => window.location.reload()}>
+                    <h1 className='font-bold  text-black text-[40px] cursor-pointer select-none' onClick={() => window.location.reload()}>
                         Parish
                     </h1>
                     <p className='text-[17px] font-normal'>
